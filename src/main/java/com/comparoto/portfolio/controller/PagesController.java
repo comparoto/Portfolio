@@ -52,6 +52,7 @@ public class PagesController {
             mailSender.send(mailMessage);
             user.addAttribute("success", "Message sent successfully!");
         } catch (Exception e) {
+            e.printStackTrace();
             user.addAttribute("error", "Error sending the message. Please try again later.");
         }
 
