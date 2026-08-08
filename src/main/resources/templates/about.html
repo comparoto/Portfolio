@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Juliana Comparoto</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header th:replace="~{fragments/layout :: header}"></header>
+
+<main class="about-area">
+
+    <section class="about-main">
+        <div class="profile-photo-area">
+            <img th:src="@{/images/ju.jpg}" alt="Juliana Comparoto" class="profile-photo">
+        </div>
+
+        <div class="about-bio">
+            <span class="tag">About Me</span>
+            <h1>Hi, I'm <span class="name">Juliana Comparoto</span></h1>
+
+            <div class="quick-info">
+                <span><i class="fa-solid fa-graduation-cap"></i> Systems Analysis & Development</span>
+                <span><i class="fa-solid fa-location-dot"></i> Recife-PE | Brazil</span>
+            </div>
+
+            <p class="bio-text">
+                Systems Analysis and Development student and full-stack developer. Passionate about technology, problem-solving, and continuous learning.
+            </p>
+
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2><i class="fa-solid fa-briefcase"></i> Education & Experience</h2>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Junior Java Analyst </h3>
+                    <span class="timeline-date">Current job</span>
+                    <p>at Capgemini</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Systems Analysis and Development</h3>
+                        <span class="timeline-date">In Progress</span>
+                        <p>4/5 at CESAR School</p>
+                    </div>
+                </div>
+                </div>
+
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Elementary and high school education </h3>
+                    <span class="timeline-date">Complete</span>
+                    <p>Completed studies at the Colégio de Aplicação - UFPE</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2><i class="fa-solid fa-code"></i> Skills</h2>
+
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Hard Skills</h3>
+                <div class="tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Thymeleaf</span>
+                    <span class="tag">C</span>
+                    <span class="tag">Pyhton</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Git & GitHub</span>
+                    <span class="tag">REST APIs</span>
+                    <span class="tag">HTML / CSS</span>
+                    <span class="tag">IntelliJ / VS Code</span>
+                    <span class="tag">Trello / Notion</span>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <h3>Soft Skills</h3>
+                <div class="tags">
+                    <span class="tag tag-soft">Problem Solving</span>
+                    <span class="tag tag-soft">Analytical Thinking</span>
+                    <span class="tag tag-soft">Teamwork</span>
+                    <span class="tag tag-soft">Communication</span>
+                    <span class="tag tag-soft">Adaptability</span>
+                    <span class="tag tag-soft">Proactivity</span>
+                    <span class="tag tag-soft">Leadership</span>
+                    <span class="tag tag-soft">Design</span>
+                    <span class="tag tag-soft">Organization</span>
+                    <span class="tag tag-soft">Fast learning</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section">
+        <h2><i class="fa-solid fa-heart"></i> Personal Interests </h2>
+        <p class="subtitle">A little look into my life outside of programming:</p>
+
+        <div class="photo-gallery">
+            <div class="gallery-card">
+                <div class="card-img-wrapper">
+                    <img th:src="@{/images/coffee-wine.jpg}" alt="Coffee and Wine">
+                </div>
+                <h4>Coffee & Wine</h4>
+                <p>I love having a coffee at any time of day and a glass (or several) of red wine to relax.</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="card-img-wrapper">
+                    <img th:src="@{/images/movies.jpg}" alt="Movies and Cinema">
+                </div>
+                <h4>Movies and Cinema</h4>
+                <p>Take a quick look at my <a href ="https://letterboxd.com/JuComparoto/" target="_blank" class="letterboxd-link">Letterboxd :)</a></p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="card-img-wrapper">
+                    <img th:src="@{/images/cats.jpg}" alt="Cats">
+                </div>
+                <h4>Cats</h4>
+                <p>I have two cats, and they are my most precious treasures.</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="card-img-wrapper">
+                    <img th:src="@{/images/art.jpg}" alt="Art">
+                </div>
+                <h4>Drawing and painting</h4>
+                <p>I like spending time drawing and painting random things.</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="card-img-wrapper">
+                    <img th:src="@{/images/game.jpg}" alt="Games">
+                </div>
+                <h4>Silly games</h4>
+                <p>I love easy games like Sudoku, online puzzles, and poker. I also love taking care of my farm in Hay Day.</p>
+            </div>
+
+            <div class="gallery-card">
+                <div class="card-img-wrapper">
+                    <img th:src="@{/images/family.jpg}" alt="Friends">
+                </div>
+                <h4>Friends and Family</h4>
+                <p>I like spending time with my family playing domino and just chatting about nonsense with my friends.</p>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+
+</body>
+</html>

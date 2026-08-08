@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Juliana Comparoto</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header th:replace="~{fragments/layout :: header}"></header>
+
+<main class="main-presentation">
+    <div class="left-side">
+        <h1>I am<br><span class="name">Juliana</span></h1>
+        <p>Full-Stack Developer | Systems Analysis and Development Student | Junior Java Analyst</p>
+        <div class="info-buttons">
+            <a th:href="@{/projects}" class="button glow-button">Projects</a>
+            <a th:href="@{/about}" class="button outline-button">About me</a>
+        </div>
+    </div>
+
+    <div class="avatar-area">
+        <img th:src="@{/images/avatar.png}" alt="Avatar">
+    </div>
+
+    <div class="right-side">
+        <h2>Welcome to my website</h2>
+        <p>Browse through it and learn more about me :)</p>
+        <div class="info-buttons">
+            <a th:href="@{/contact}" class="button glow-button">Contact me</a>
+        </div>
+    </div>
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+
+</body>
+</html>

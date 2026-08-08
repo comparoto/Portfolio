@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Juliana Comparoto</title>
+
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+
+<header th:replace="~{fragments/layout :: header}"></header>
+
+<main class="projects-container">
+
+    <section class="projects-header">
+        <span class="tag">Portfolio</span>
+        <h1>My <span class="name">Projects</span></h1>
+        <p class="subtitle">
+            Here are some applications built as part of projects and/or individually.
+        </p>
+    </section>
+
+    <section class="projects-grid">
+
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">PostgreSQL</span>
+                    <span class="tag">Thymeleaf</span>
+                </div>
+
+                <h3>Conecta Arena</h3>
+                <p class="project-desc">
+                    The Conecta Arena project was developed to create a web application for Arena Pernambuco, aiming to address the issues of low actual occupancy and underutilization of the space. The system enables a connection between the facility's management and the public, facilitating the promotion of cultural, sporting, and corporate events.
+                </p>
+
+                <div class="project-details">
+                    <h4><i class="fa-solid fa-gears"></i> Key Features:</h4>
+                    <ul>
+                        <li>Scalable MVC architecture with Spring Boot</li>
+                        <li>Relational database modeling (JPA/Hibernate)</li>
+                        <li>Responsive and dynamic interface</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/comparoto/conecta_arena" target="_blank" class="button glow-button">
+                        <i class="fa-brands fa-github"></i> Repository
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-img-wrapper">
+                <img th:src="@{/images/conecta-arena.png}" alt="Conecta Arena">
+            </div>
+
+        </article>
+
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Rest API</span>
+                    <span class="tag">TypeScript</span>
+                    <span class="tag">Angular CLI</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+
+                <h3>Protege Agro</h3>
+                <p class="project-desc">
+                    The Protege Agro project was developed to address the challenge of mapping climate vulnerability faced by many companies in the agricultural sector, helping to integrate data, monitor conditions, issue alerts, and adapt production chains. It is a platform for managing climate risks within agricultural supply chains; the expected outcomes include reduced losses from weather events, producers receiving advance alerts, increased adoption of resilient practices, and automated reporting on contributions to climate adaptation.
+                </p>
+
+                <div class="project-details">
+                    <h4><i class="fa-solid fa-gears"></i> Key Features:</h4>
+                    <ul>
+                        <li>Connection to weather API</li>
+                        <li>Contribution documentation</li>
+                        <li>Easy-to-use interface</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/comparoto/Protege-Agro" target="_blank" class="button glow-button">
+                        <i class="fa-brands fa-github"></i> Repository
+                    </a>
+                </div>
+            </div>
+            <div class="project-img-wrapper">
+                <img th:src="@{/images/protege-agro.png}" alt="Protege Agro">
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">C</span>
+                    <span class="tag">CLI Lib</span>
+                </div>
+
+                <h3>Diaboolean</h3>
+                <p class="project-desc">
+                    Game developed for the Logic for Computing and Imperative and Functional Programming courses. Diaboolean is a corrupted dungeon where truth itself is under attack. Ancient chambers block your path, guarded not by beasts, but by "Bosses" that manipulate reality. To survive, you must use logical values ​​to forge the correct "key"—all while enemies actively counter your logic, attempting to trap you in darkness forever.
+                </p>
+
+                <div class="project-details">
+                    <h4><i class="fa-solid fa-gears"></i> Key Features:</h4>
+                    <ul>
+                        <li>Good graphics</li>
+                        <li>Good code structure</li>
+                        <li>Logic</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/MarcosFraga0/pifGame-Diaboolean" target="_blank" class="button glow-button">
+                        <i class="fa-brands fa-github"></i> Repository
+                    </a>
+                </div>
+            </div>
+            <div class="project-img-wrapper">
+                <img th:src="@{/images/diaboolean.jpg}" alt="Diaboolean">
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">JavaScript</span>
+                </div>
+
+                <h3>Mini Playlist</h3>
+                <p class="project-desc">
+                    My first mini-project with JavaScript. It's a mini music player.
+                </p>
+
+                <div class="project-details">
+                    <h4><i class="fa-solid fa-gears"></i> Key Features:</h4>
+                    <ul>
+                        <li>Pause function</li>
+                        <li>Like function</li>
+                        <li>Fast-forward and rewind function</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/comparoto/Mini-playlist" target="_blank" class="button glow-button">
+                        <i class="fa-brands fa-github"></i> Repository
+                    </a>
+                </div>
+            </div>
+            <div class="project-img-wrapper">
+                <img th:src="@{/images/playlist.png}" alt="Mini Player">
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="project-content">
+                <div class="project-tags">
+                    <span class="tag">Java</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Thymeleaf</span>
+                </div>
+
+                <h3>My Portfolio</h3>
+                <p class="project-desc">
+                    Developed to fulfill supplementary hour requirements and intended to serve as a personal website with information about me.
+                </p>
+
+                <div class="project-details">
+                    <h4><i class="fa-solid fa-gears"></i> Key Features:</h4>
+                    <ul>
+                        <li>About me</li>
+                        <li>My projects</li>
+                        <li>My contact details</li>
+                    </ul>
+                </div>
+
+                <div class="project-links">
+                    <a href="https://github.com/comparoto/Portfolio" target="_blank" class="button glow-button">
+                        <i class="fa-brands fa-github"></i> Repository
+                    </a>
+                </div>
+            </div>
+            <div class="project-img-wrapper">
+                <img th:src="@{/images/portfolio.png}" alt="My Portfolio">
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer th:replace="~{fragments/layout :: footer}"></footer>
+
+</body>
+</html>
