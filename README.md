@@ -1,6 +1,6 @@
 # Personal Portfolio
 
-**Live Demo:** [Clique aqui](https://portfolio-ngsw.onrender.com)
+**Live Demo:** [Clique aqui](https://julianacomparoto.me)
 
 ## Tech Stack
 
